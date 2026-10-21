@@ -3,230 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conheça uma seleção de móveis infantis, camas, berços, cômodas, poltronas e itens de decoração para transformar seus ambientes.">
-  <title>Loja Timber | Móveis e Decoração</title>
+  <meta name="description" content="Página demonstrativa de apresentação de soluções para casa, construção, reforma e decoração.">
+  <title>Nidia dos Santos Dolfini | Casa e Construção</title>
 
-  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-
-  <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --verde: #34483c;
-      --verde-claro: #61745d;
-      --bege: #f4efe7;
-      --creme: #fbf9f5;
-      --madeira: #b48a62;
-      --texto: #33352f;
+      --verde: #174b37;
+      --verde-escuro: #103728;
+      --laranja: #f5a623;
+      --fundo: #f5f6f3;
+      --texto: #292e2a;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'DM Sans', sans-serif;
+      margin: 0;
       color: var(--texto);
-      background: #fff;
+      font-family: 'DM Sans', sans-serif;
     }
 
     a {
       text-decoration: none;
     }
 
-    .topbar {
-      background: var(--verde);
+    .top-strip {
+      background: var(--verde-escuro);
       color: white;
       text-align: center;
-      padding: 9px 12px;
       font-size: 12px;
-      letter-spacing: .5px;
+      padding: 9px 12px;
     }
 
     .navbar {
-      background: #fff;
+      background: white;
       padding: 17px 0;
-      border-bottom: 1px solid #eee9e0;
+      box-shadow: 0 2px 12px #00000008;
     }
 
-    .brand {
+    .logo {
       color: var(--verde);
-      font-family: 'Playfair Display', serif;
-      font-size: 31px;
-      font-weight: 700;
-      letter-spacing: 1px;
+      font-size: 25px;
+      font-weight: 800;
+      line-height: 1.1;
     }
 
-    .brand span {
+    .logo span {
       display: block;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 9px;
-      letter-spacing: 4px;
-      text-align: center;
-      margin-top: -4px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 5px;
+      color: #70766f;
     }
 
     .navbar .nav-link {
-      color: #353830;
       font-size: 13px;
-      font-weight: 600;
-      margin: 0 8px;
+      font-weight: 700;
+      color: #333a35;
+      padding: 10px 12px;
     }
 
     .navbar .nav-link:hover {
-      color: var(--madeira);
-    }
-
-    .hero {
-      min-height: 590px;
-      display: flex;
-      align-items: center;
-      background:
-        linear-gradient(90deg, rgba(28, 38, 30, .78), rgba(28, 38, 30, .12)),
-        url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=85')
-        center/cover no-repeat;
-      color: #fff;
-    }
-
-    .hero-content {
-      max-width: 620px;
-      padding: 80px 0;
-    }
-
-    .eyebrow {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-
-    h1, h2, h3, .serif {
-      font-family: 'Playfair Display', serif;
-    }
-
-    .hero h1 {
-      font-size: clamp(40px, 5.5vw, 70px);
-      line-height: 1.1;
-      margin: 22px 0;
-    }
-
-    .hero p {
-      font-size: 16px;
-      line-height: 1.9;
-      max-width: 500px;
-      color: #f3f1eb;
-    }
-
-    .btn-timber {
-      display: inline-block;
-      background: var(--verde);
-      color: white;
-      padding: 14px 26px;
-      border: 1px solid var(--verde);
-      border-radius: 2px;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      transition: .25s;
-    }
-
-    .btn-timber:hover {
-      background: var(--verde-claro);
-      border-color: var(--verde-claro);
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    .btn-outline-light-custom {
-      display: inline-block;
-      padding: 14px 26px;
-      color: white;
-      border: 1px solid white;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .btn-outline-light-custom:hover {
-      background: white;
       color: var(--verde);
     }
 
-    .benefits {
-      padding: 28px 0;
-      background: var(--creme);
-      border-bottom: 1px solid #eee7dc;
+    .btn-main {
+      display: inline-block;
+      background: var(--laranja);
+      color: #252b25;
+      border: 0;
+      padding: 13px 22px;
+      font-size: 12px;
+      font-weight: 800;
+      border-radius: 4px;
+      transition: .2s;
     }
 
-    .benefit-item {
+    .btn-main:hover {
+      background: #ffc04f;
+      color: #202820;
+      transform: translateY(-2px);
+    }
+
+    .btn-green {
+      display: inline-block;
+      background: var(--verde);
+      color: white;
+      padding: 13px 22px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      transition: .2s;
+    }
+
+    .btn-green:hover {
+      background: var(--verde-escuro);
+      color: white;
+    }
+
+    .hero {
+      min-height: 560px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      color: white;
+      background:
+        linear-gradient(90deg, rgba(12, 42, 29, .88), rgba(12, 42, 29, .25)),
+        url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1900&q=85')
+        center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 650px;
+      padding: 75px 0;
+    }
+
+    .hero-label {
+      display: inline-block;
+      background: var(--laranja);
+      color: #202820;
+      padding: 7px 12px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      border-radius: 3px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 65px);
+      line-height: 1.08;
+      font-weight: 800;
+      margin: 24px 0;
+    }
+
+    .hero p {
+      font-size: 15px;
+      line-height: 1.9;
+      max-width: 550px;
+      color: #f1f4f0;
+    }
+
+    .benefits {
+      background: white;
+      padding: 27px 0;
+      border-bottom: 1px solid #e8ebe6;
+    }
+
+    .benefit {
+      display: flex;
       gap: 13px;
-      padding: 12px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
     }
 
-    .benefit-item i {
-      font-size: 25px;
-      color: var(--verde-claro);
+    .benefit i {
+      color: var(--verde);
+      font-size: 27px;
     }
 
-    .benefit-item strong {
+    .benefit strong {
       display: block;
       font-size: 12px;
     }
 
-    .benefit-item small {
+    .benefit small {
+      color: #737a73;
       font-size: 11px;
-      color: #777;
     }
 
     .section {
-      padding: 85px 0;
+      padding: 80px 0;
     }
 
-    .section-heading {
+    .section-title {
+      max-width: 690px;
+      margin: 0 auto 40px;
       text-align: center;
-      max-width: 650px;
-      margin: 0 auto 42px;
     }
 
-    .section-heading .eyebrow {
-      color: var(--madeira);
+    .section-title .eyebrow {
+      color: #c57b12;
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      text-transform: uppercase;
     }
 
-    .section-heading h2 {
-      font-size: clamp(30px, 4vw, 43px);
-      margin: 14px 0;
+    .section-title h2 {
+      font-size: clamp(29px, 4vw, 43px);
+      font-weight: 800;
+      margin: 13px 0;
     }
 
-    .section-heading p {
-      color: #77766f;
-      line-height: 1.8;
+    .section-title p {
+      color: #737a73;
       font-size: 14px;
+      line-height: 1.8;
     }
 
     .category-card {
       display: block;
       position: relative;
       overflow: hidden;
-      background: var(--bege);
+      border-radius: 7px;
+      background: #e8e9e4;
       color: white;
-      min-height: 280px;
     }
 
     .category-card img {
       width: 100%;
-      height: 310px;
+      height: 275px;
       object-fit: cover;
-      transition: transform .6s;
+      transition: transform .45s;
     }
 
     .category-card:hover img {
@@ -236,204 +235,213 @@
     .category-card::after {
       content: "";
       position: absolute;
-      inset: 35% 0 0;
-      background: linear-gradient(transparent, rgba(0,0,0,.68));
+      inset: 30% 0 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, .78));
     }
 
-    .category-info {
+    .category-caption {
       position: absolute;
       z-index: 2;
-      left: 23px;
-      right: 20px;
-      bottom: 22px;
+      bottom: 20px;
+      left: 20px;
+      right: 15px;
     }
 
-    .category-info h3 {
-      font-size: 24px;
-      margin-bottom: 6px;
+    .category-caption h3 {
+      font-size: 21px;
+      font-weight: 800;
     }
 
-    .category-info span {
+    .category-caption span {
       font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
+      font-weight: 700;
+      letter-spacing: .5px;
     }
 
-    .feature-section {
-      background: var(--bege);
+    .category-caption i {
+      color: var(--laranja);
     }
 
-    .feature-image {
+    .about-section {
+      background: var(--fundo);
+    }
+
+    .about-image {
       width: 100%;
-      min-height: 430px;
+      height: 440px;
       object-fit: cover;
+      border-radius: 7px;
     }
 
-    .feature-copy {
-      padding: 45px 7%;
+    .about-copy {
+      padding: 25px 0 25px 35px;
     }
 
-    .feature-copy h2 {
-      font-size: clamp(30px, 4vw, 45px);
-      line-height: 1.2;
-      margin: 20px 0;
+    .about-copy h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      font-weight: 800;
+      line-height: 1.18;
+      margin: 18px 0;
     }
 
-    .feature-copy p {
-      color: #66675f;
-      line-height: 1.9;
+    .about-copy p {
       font-size: 14px;
+      line-height: 1.9;
+      color: #6d746d;
     }
 
-    .product-card {
-      height: 100%;
-      border: 1px solid #eeeae3;
+    .eyebrow {
+      color: #c57b12;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .idea-card {
       background: white;
+      border: 1px solid #e9ece7;
+      border-radius: 7px;
+      height: 100%;
+      overflow: hidden;
       transition: .25s;
     }
 
-    .product-card:hover {
+    .idea-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 28px rgba(35, 40, 30, .08);
+      box-shadow: 0 10px 28px #0000000c;
     }
 
-    .product-card img {
+    .idea-card img {
       width: 100%;
-      height: 250px;
+      height: 220px;
       object-fit: cover;
-      background: var(--bege);
     }
 
-    .product-info {
-      padding: 22px 18px;
+    .idea-body {
+      padding: 22px;
     }
 
-    .product-info h3 {
-      font-size: 21px;
-      margin-bottom: 10px;
+    .idea-body h3 {
+      font-size: 19px;
+      font-weight: 800;
     }
 
-    .product-info p {
-      font-size: 12px;
-      color: #777;
-      line-height: 1.7;
-      min-height: 42px;
+    .idea-body p {
+      font-size: 13px;
+      color: #737a73;
+      line-height: 1.8;
     }
 
-    .product-link {
+    .idea-body i {
       color: var(--verde);
-      font-size: 11px;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-
-    .product-link:hover {
-      color: var(--madeira);
+      font-size: 20px;
     }
 
     .banner {
-      min-height: 410px;
-      display: flex;
-      align-items: center;
       color: white;
+      padding: 75px 0;
       background:
-        linear-gradient(90deg, rgba(30,40,32,.78), rgba(30,40,32,.18)),
-        url('https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=1800&q=85')
+        linear-gradient(90deg, rgba(16, 55, 40, .93), rgba(16, 55, 40, .65)),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85')
         center/cover no-repeat;
     }
 
     .banner h2 {
-      font-size: clamp(34px, 4.5vw, 54px);
-      max-width: 620px;
-      margin: 18px 0;
+      font-size: clamp(31px, 4vw, 47px);
+      font-weight: 800;
+      max-width: 690px;
+      margin: 15px 0;
     }
 
     .banner p {
-      max-width: 500px;
-      line-height: 1.8;
+      max-width: 620px;
       font-size: 14px;
+      line-height: 1.9;
+      color: #edf2ed;
     }
 
-    .about-icon {
-      width: 55px;
-      height: 55px;
-      border-radius: 50%;
-      display: grid;
+    .info-card {
+      border: 1px solid #e8ebe6;
+      padding: 27px 22px;
+      border-radius: 6px;
+      height: 100%;
+    }
+
+    .info-card i {
+      display: inline-grid;
       place-items: center;
-      background: var(--bege);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #eaf0eb;
       color: var(--verde);
-      font-size: 23px;
+      font-size: 24px;
       margin-bottom: 18px;
     }
 
-    .about-card h3 {
-      font-size: 23px;
-      margin-bottom: 12px;
+    .info-card h3 {
+      font-size: 19px;
+      font-weight: 800;
     }
 
-    .about-card p {
-      color: #777;
+    .info-card p {
+      color: #727970;
       font-size: 13px;
       line-height: 1.8;
+      margin-bottom: 0;
     }
 
     .cta {
-      padding: 65px 0;
-      background: var(--verde);
-      color: white;
+      background: var(--laranja);
+      padding: 58px 0;
       text-align: center;
     }
 
     .cta h2 {
-      font-size: clamp(30px, 4vw, 43px);
-      margin-bottom: 16px;
+      font-size: clamp(29px, 4vw, 42px);
+      font-weight: 800;
     }
 
     .cta p {
-      max-width: 620px;
-      margin: 0 auto 25px;
-      color: #e0e4dc;
+      max-width: 650px;
+      margin: 15px auto 24px;
       font-size: 14px;
       line-height: 1.8;
     }
 
-    .footer {
-      background: #242c26;
-      color: #e9e9e3;
+    .cta .btn-green {
+      background: var(--verde-escuro);
+    }
+
+    footer {
+      background: #172c22;
+      color: white;
       padding: 55px 0 20px;
     }
 
-    .footer .brand {
-      color: white;
-      display: inline-block;
-      margin-bottom: 20px;
+    footer h3, footer h4 {
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 17px;
     }
 
-    .footer h4 {
-      font-family: 'DM Sans', sans-serif;
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      margin-bottom: 18px;
-    }
-
-    .footer p, .footer a {
-      color: #c6cbc4;
+    footer p, footer li, footer a {
+      color: #c9d2cb;
       font-size: 12px;
       line-height: 2;
     }
 
-    .footer a:hover {
-      color: white;
+    footer a:hover {
+      color: var(--laranja);
     }
 
     .footer-bottom {
-      border-top: 1px solid #414940;
-      margin-top: 35px;
+      border-top: 1px solid #3b4d42;
+      margin-top: 30px;
       padding-top: 20px;
-      color: #b6bdb4;
       font-size: 11px;
+      color: #c9d2cb;
     }
 
     @media (max-width: 767px) {
@@ -443,31 +451,27 @@
       }
 
       .hero-content {
-        padding: 65px 15px;
+        padding: 60px 12px;
       }
 
       .section {
-        padding: 60px 0;
+        padding: 58px 0;
       }
 
-      .category-card img {
-        height: 260px;
-      }
-
-      .feature-image {
-        min-height: 300px;
-      }
-
-      .feature-copy {
-        padding: 35px 25px;
-      }
-
-      .benefit-item {
+      .benefit {
         justify-content: flex-start;
       }
 
-      .product-card img {
-        height: 210px;
+      .about-image {
+        height: 300px;
+      }
+
+      .about-copy {
+        padding: 28px 8px 0;
+      }
+
+      .category-card img {
+        height: 235px;
       }
     }
   </style>
@@ -475,103 +479,92 @@
 
 <body>
 
-  <!-- Aviso superior -->
-  <div class="topbar">
-    INSPIRAÇÃO, CONFORTO E DESIGN PARA CADA AMBIENTE DA SUA CASA
+  <div class="top-strip">
+    IDEIAS E INSPIRAÇÃO PARA CONSTRUIR, RENOVAR E DECORAR
   </div>
 
-  <!-- Navegação -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand brand" href="#inicio">
-        timber
-        <span>MÓVEIS & DECORAÇÃO</span>
+      <a class="navbar-brand logo" href="#inicio">
+        CASA & OBRA
+        <span>CONSTRUÇÃO • REFORMA • DECORAÇÃO</span>
       </a>
 
       <button class="navbar-toggler" type="button"
         data-bs-toggle="collapse" data-bs-target="#menu"
         aria-controls="menu" aria-expanded="false"
-        aria-label="Abrir menu">
+        aria-label="Abrir navegação">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav mx-auto align-items-lg-center">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
-          <li class="nav-item"><a class="nav-link" href="#destaques">Ambientes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#inspiracao">Inspiração</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro</a></li>
         </ul>
 
-        <a href="https://www.lojatimber.com.br/"
-           target="_blank" rel="noopener"
-           class="btn-timber">
-          Visitar loja
+        <a class="btn-main" href="https://www.carajas.com.br/"
+           target="_blank" rel="noopener noreferrer">
+          Visitar Carajás
         </a>
       </div>
     </div>
   </nav>
 
-  <!-- Banner principal -->
   <header class="hero" id="inicio">
     <div class="container">
       <div class="hero-content">
-        <div class="eyebrow">Sua casa, sua história</div>
-
-        <h1>Ambientes que acolhem. Detalhes que encantam.</h1>
-
+        <span class="hero-label">Sua casa, suas ideias</span>
+        <h1>Inspire-se para transformar cada espaço.</h1>
         <p>
-          Descubra inspirações em móveis e decoração para criar espaços
-          cheios de personalidade, conforto e beleza — do quarto infantil
-          aos ambientes que fazem parte da sua rotina.
+          Explore ideias para construção, reforma e decoração.
+          Encontre referências para planejar ambientes funcionais,
+          valorizar os detalhes e transformar seus projetos em realidade.
         </p>
-
         <div class="d-flex flex-wrap gap-3 mt-4">
-          <a href="#categorias" class="btn-timber">
+          <a href="#categorias" class="btn-main">
             Explorar categorias
           </a>
-
-          <a href="https://www.lojatimber.com.br/"
-             target="_blank" rel="noopener"
-             class="btn-outline-light-custom">
-            Conhecer a loja
+          <a href="#sobre" class="btn-green">
+            Conhecer a página
           </a>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Benefícios institucionais -->
   <section class="benefits">
     <div class="container">
       <div class="row g-3">
         <div class="col-12 col-md-4">
-          <div class="benefit-item">
-            <i class="bi bi-house-heart"></i>
+          <div class="benefit">
+            <i class="bi bi-house-gear"></i>
             <div>
-              <strong>Ambientes acolhedores</strong>
-              <small>Inspiração para todos os espaços</small>
+              <strong>Construção e reforma</strong>
+              <small>Referências para planejar seus projetos</small>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="benefit-item">
-            <i class="bi bi-stars"></i>
-            <div>
-              <strong>Design e personalidade</strong>
-              <small>Estilo que combina com você</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-          <div class="benefit-item">
+          <div class="benefit">
             <i class="bi bi-palette"></i>
             <div>
-              <strong>Detalhes que transformam</strong>
-              <small>Ideias para renovar seu ambiente</small>
+              <strong>Decoração e ambientes</strong>
+              <small>Inspiração para sua casa</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="benefit">
+            <i class="bi bi-lightbulb"></i>
+            <div>
+              <strong>Ideias e soluções</strong>
+              <small>Descubra possibilidades para cada espaço</small>
             </div>
           </div>
         </div>
@@ -579,75 +572,75 @@
     </div>
   </section>
 
-  <!-- Categorias -->
   <section class="section" id="categorias">
     <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">Encontre sua inspiração</div>
-        <h2>Descubra nossas categorias</h2>
+      <div class="section-title">
+        <div class="eyebrow">Explore as possibilidades</div>
+        <h2>Categorias para seus projetos</h2>
         <p>
-          Explore ideias para montar quartos, organizar ambientes e
-          acrescentar conforto à decoração da sua casa.
+          Confira referências visuais de diferentes áreas da casa.
+          Os links levam ao site oficial da Carajás para consulta
+          das categorias e dos produtos disponíveis.
         </p>
       </div>
 
       <div class="row g-4">
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="category-card" href="https://www.lojatimber.com.br/moveis-infantis-e-juvenis" target="_blank" rel="noopener">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Quarto decorado com móveis e tons suaves" loading="lazy">
-            <div class="category-info">
-              <h3>Móveis infantis</h3>
-              <span>Conheça a categoria <i class="bi bi-arrow-up-right"></i></span>
+          <a class="category-card" href="https://www.carajas.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Projeto arquitetônico de construção" loading="lazy">
+            <div class="category-caption">
+              <h3>Construção</h3>
+              <span>Explorar referências <i class="bi bi-arrow-up-right"></i></span>
             </div>
           </a>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="category-card" href="https://www.lojatimber.com.br/moveis" target="_blank" rel="noopener">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Ambiente de quarto com cama e decoração" loading="lazy">
-            <div class="category-info">
-              <h3>Camas e berços</h3>
-              <span>Ver móveis <i class="bi bi-arrow-up-right"></i></span>
+          <a class="category-card" href="https://www.carajas.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Casa contemporânea com acabamento moderno" loading="lazy">
+            <div class="category-caption">
+              <h3>Reforma</h3>
+              <span>Ver possibilidades <i class="bi bi-arrow-up-right"></i></span>
             </div>
           </a>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="category-card" href="https://www.lojatimber.com.br/moveis" target="_blank" rel="noopener">
-            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80" alt="Móveis de madeira para organização do quarto" loading="lazy">
-            <div class="category-info">
-              <h3>Cômodas e armários</h3>
-              <span>Ver opções <i class="bi bi-arrow-up-right"></i></span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <a class="category-card" href="https://www.lojatimber.com.br/" target="_blank" rel="noopener">
-            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=80" alt="Poltrona confortável em ambiente elegante" loading="lazy">
-            <div class="category-info">
-              <h3>Poltronas e pufes</h3>
-              <span>Ver coleção <i class="bi bi-arrow-up-right"></i></span>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <a class="category-card" href="https://www.lojatimber.com.br/decoracao-infantil" target="_blank" rel="noopener">
-            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Sala decorada com elementos naturais" loading="lazy">
-            <div class="category-info">
+          <a class="category-card" href="https://www.carajas.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Sala decorada com móveis e acessórios" loading="lazy">
+            <div class="category-caption">
               <h3>Decoração</h3>
-              <span>Descobrir detalhes <i class="bi bi-arrow-up-right"></i></span>
+              <span>Descobrir ideias <i class="bi bi-arrow-up-right"></i></span>
             </div>
           </a>
         </div>
 
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="category-card" href="https://www.lojatimber.com.br/" target="_blank" rel="noopener">
-            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="Ambiente contemporâneo com móveis e acessórios" loading="lazy">
-            <div class="category-info">
-              <h3>Inspire seu ambiente</h3>
-              <span>Ver loja completa <i class="bi bi-arrow-up-right"></i></span>
+          <a class="category-card" href="https://www.carajas.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Interior residencial com acabamento elegante" loading="lazy">
+            <div class="category-caption">
+              <h3>Pisos e revestimentos</h3>
+              <span>Consultar opções <i class="bi bi-arrow-up-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="category-card" href="https://www.carajas.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80" alt="Luminária moderna em ambiente residencial" loading="lazy">
+            <div class="category-caption">
+              <h3>Iluminação</h3>
+              <span>Ver referências <i class="bi bi-arrow-up-right"></i></span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="category-card" href="https://www.carajas.com.br/moveis" target="_blank" rel="noopener noreferrer">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Móveis para compor uma sala de estar" loading="lazy">
+            <div class="category-caption">
+              <h3>Móveis para casa</h3>
+              <span>Consultar categoria <i class="bi bi-arrow-up-right"></i></span>
             </div>
           </a>
         </div>
@@ -655,40 +648,35 @@
     </div>
   </section>
 
-  <!-- Destaque editorial -->
-  <section class="feature-section" id="destaques">
-    <div class="container-fluid p-0">
-      <div class="row g-0 align-items-stretch">
+  <section class="about-section section" id="inspiracao">
+    <div class="container">
+      <div class="row align-items-center g-4">
         <div class="col-12 col-lg-6">
-          <img class="feature-image"
-            src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=1200&q=85"
-            alt="Sala com decoração elegante e móveis contemporâneos"
+          <img class="about-image"
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
+            alt="Ambiente residencial moderno e iluminado"
             loading="lazy">
         </div>
 
-        <div class="col-12 col-lg-6 d-flex align-items-center">
-          <div class="feature-copy">
-            <div class="eyebrow" style="color: var(--madeira);">
-              Design para viver melhor
-            </div>
-
-            <h2>Seu espaço merece atenção em cada detalhe.</h2>
-
+        <div class="col-12 col-lg-6">
+          <div class="about-copy">
+            <div class="eyebrow">Planeje com inspiração</div>
+            <h2>Seu projeto começa com boas ideias.</h2>
             <p>
-              Um ambiente bem planejado vai além da aparência. A escolha
-              dos móveis, das cores e dos complementos ajuda a criar
-              espaços funcionais, agradáveis e cheios de identidade.
+              Reformar ou renovar um ambiente é uma oportunidade de
+              combinar funcionalidade, conforto e estilo. Planejar
+              as necessidades de cada espaço ajuda a tomar decisões
+              mais adequadas ao projeto.
             </p>
-
             <p>
-              Encontre referências para quartos infantis, áreas de descanso
-              e outros ambientes da casa, combinando estética e praticidade.
+              Pesquise materiais, compare opções, verifique medidas
+              e consulte as especificações dos produtos antes de
+              realizar suas compras.
             </p>
-
-            <a href="https://www.lojatimber.com.br/"
-               target="_blank" rel="noopener"
-               class="btn-timber mt-2">
-              Explorar a loja
+            <a class="btn-green" href="https://www.carajas.com.br/"
+               target="_blank" rel="noopener noreferrer">
+              Consultar site de referência
+              <i class="bi bi-arrow-up-right"></i>
             </a>
           </div>
         </div>
@@ -696,59 +684,58 @@
     </div>
   </section>
 
-  <!-- Seleção de ambientes -->
   <section class="section">
     <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">Ideias para sua casa</div>
-        <h2>Inspiração em cada ambiente</h2>
+      <div class="section-title">
+        <div class="eyebrow">Cada detalhe importa</div>
+        <h2>Ideias para todos os ambientes</h2>
         <p>
-          Uma seleção visual para ajudar você a imaginar novas
-          possibilidades de composição e decoração.
+          Inspire-se com referências de interiores e soluções para
+          organizar, renovar e valorizar os espaços da casa.
         </p>
       </div>
 
       <div class="row g-4">
-        <div class="col-12 col-sm-6 col-lg-3">
-          <article class="product-card">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80" alt="Quarto com cama e decoração suave" loading="lazy">
-            <div class="product-info">
-              <h3>Quarto dos sonhos</h3>
-              <p>Ideias para um espaço confortável, organizado e acolhedor.</p>
-              <a class="product-link" href="https://www.lojatimber.com.br/" target="_blank" rel="noopener">Explorar <i class="bi bi-arrow-right"></i></a>
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="idea-card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80" alt="Fachada e arquitetura residencial" loading="lazy">
+            <div class="idea-body">
+              <h3>Fachadas e exteriores</h3>
+              <p>Referências para planejar a aparência externa da residência.</p>
+              <i class="bi bi-house"></i>
             </div>
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <article class="product-card">
-            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Decoração de interiores em tons neutros" loading="lazy">
-            <div class="product-info">
-              <h3>Detalhes naturais</h3>
-              <p>Materiais, texturas e tonalidades que conversam entre si.</p>
-              <a class="product-link" href="https://www.lojatimber.com.br/decoracao-infantil" target="_blank" rel="noopener">Ver inspirações <i class="bi bi-arrow-right"></i></a>
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="idea-card">
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80" alt="Sala de estar com decoração contemporânea" loading="lazy">
+            <div class="idea-body">
+              <h3>Salas e convivência</h3>
+              <p>Composições que equilibram conforto, circulação e estilo.</p>
+              <i class="bi bi-lamp"></i>
             </div>
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <article class="product-card">
-            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=700&q=80" alt="Poltrona em ambiente de descanso" loading="lazy">
-            <div class="product-info">
-              <h3>Conforto e descanso</h3>
-              <p>Inspire-se em composições que valorizam o aconchego.</p>
-              <a class="product-link" href="https://www.lojatimber.com.br/" target="_blank" rel="noopener">Conhecer opções <i class="bi bi-arrow-right"></i></a>
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="idea-card">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=700&q=80" alt="Interior de residência com materiais e acabamentos" loading="lazy">
+            <div class="idea-body">
+              <h3>Acabamentos</h3>
+              <p>Explore texturas, cores e materiais para os ambientes.</p>
+              <i class="bi bi-grid-3x3-gap"></i>
             </div>
           </article>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3">
-          <article class="product-card">
-            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=700&q=80" alt="Móveis de madeira para organização" loading="lazy">
-            <div class="product-info">
-              <h3>Organização elegante</h3>
-              <p>Soluções visuais para aproveitar melhor cada espaço.</p>
-              <a class="product-link" href="https://www.lojatimber.com.br/moveis" target="_blank" rel="noopener">Ver móveis <i class="bi bi-arrow-right"></i></a>
+        <div class="col-12 col-md-6 col-lg-3">
+          <article class="idea-card">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=700&q=80" alt="Cozinha organizada com móveis planejados" loading="lazy">
+            <div class="idea-body">
+              <h3>Cozinhas funcionais</h3>
+              <p>Ideias para organizar áreas de preparo e armazenamento.</p>
+              <i class="bi bi-cup-hot"></i>
             </div>
           </article>
         </div>
@@ -756,66 +743,64 @@
     </div>
   </section>
 
-  <!-- Banner de inspiração -->
   <section class="banner">
     <div class="container">
-      <div class="eyebrow">Um novo olhar para sua casa</div>
-      <h2>Transforme espaços em histórias para viver.</h2>
+      <div class="eyebrow">Construa suas ideias</div>
+      <h2>Transforme planos em ambientes que combinam com você.</h2>
       <p>
-        Descubra móveis e elementos decorativos que ajudam a dar vida
-        às suas ideias e a tornar os ambientes mais pessoais.
+        Pesquise produtos, conheça materiais e reúna referências
+        para organizar seu próximo projeto de construção, reforma
+        ou decoração.
       </p>
-      <a href="https://www.lojatimber.com.br/"
-         target="_blank" rel="noopener"
-         class="btn-outline-light-custom mt-3">
-        Visitar site da loja
+      <a href="https://www.carajas.com.br/"
+         target="_blank" rel="noopener noreferrer"
+         class="btn-main mt-3">
+        Acessar site da Carajás
       </a>
     </div>
   </section>
 
-  <!-- Sobre -->
   <section class="section" id="sobre">
     <div class="container">
-      <div class="section-heading">
-        <div class="eyebrow">Sobre a proposta</div>
-        <h2>Beleza, funcionalidade e acolhimento</h2>
+      <div class="section-title">
+        <div class="eyebrow">Uma página organizada</div>
+        <h2>Informação clara em cada seção</h2>
         <p>
-          O conceito da página é apresentar uma experiência visual
-          organizada, com destaque para os ambientes, os produtos e a
-          inspiração em decoração.
+          O modelo foi estruturado para apresentar conteúdo de forma
+          simples, responsiva e acessível em computadores e celulares.
         </p>
       </div>
 
-      <div class="row g-5">
+      <div class="row g-4">
         <div class="col-12 col-md-4">
-          <div class="about-card">
-            <div class="about-icon"><i class="bi bi-house-heart"></i></div>
-            <h3>Ambientes com identidade</h3>
+          <div class="info-card">
+            <i class="bi bi-layout-text-window"></i>
+            <h3>Apresentação profissional</h3>
             <p>
-              Explore combinações que refletem estilos diferentes e
-              ajudam a construir uma casa com personalidade.
+              Seções organizadas para destacar informações institucionais,
+              imagens e referências de produtos.
             </p>
           </div>
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="about-card">
-            <div class="about-icon"><i class="bi bi-rulers"></i></div>
-            <h3>Praticidade no dia a dia</h3>
+          <div class="info-card">
+            <i class="bi bi-phone"></i>
+            <h3>Design responsivo</h3>
             <p>
-              Pense na circulação, na organização e no uso de cada móvel
-              antes de escolher a composição ideal.
+              Estrutura adaptável para diferentes tamanhos de tela,
+              utilizando o sistema de grade do Bootstrap.
             </p>
           </div>
         </div>
 
         <div class="col-12 col-md-4">
-          <div class="about-card">
-            <div class="about-icon"><i class="bi bi-heart"></i></div>
-            <h3>Conforto em cada detalhe</h3>
+          <div class="info-card">
+            <i class="bi bi-link-45deg"></i>
+            <h3>Navegação direta</h3>
             <p>
-              Cores suaves, materiais acolhedores e uma boa iluminação
-              contribuem para ambientes agradáveis.
+              Links externos permitem consultar a fonte de referência
+              e conhecer as informações disponíveis no site oficial.
             </p>
           </div>
         </div>
@@ -823,64 +808,64 @@
     </div>
   </section>
 
-  <!-- Chamada final -->
-  <section class="cta" id="contato">
+  <section class="cta">
     <div class="container">
-      <div class="eyebrow">Sua próxima inspiração começa aqui</div>
-      <h2>Vamos imaginar novos ambientes?</h2>
+      <h2>Comece a planejar seu próximo projeto</h2>
       <p>
-        Visite o site da Loja Timber para consultar o catálogo oficial,
-        verificar os produtos disponíveis e conferir as condições atuais
-        de compra e atendimento.
+        Consulte o catálogo oficial da Carajás para verificar produtos,
+        disponibilidade, preços, condições de compra e atendimento.
       </p>
-      <a href="https://www.lojatimber.com.br/"
-         target="_blank" rel="noopener"
-         class="btn-outline-light-custom">
-        Acessar Loja Timber <i class="bi bi-arrow-up-right"></i>
+      <a href="https://www.carajas.com.br/"
+         target="_blank" rel="noopener noreferrer"
+         class="btn-green">
+        Visitar site de referência
+        <i class="bi bi-arrow-up-right"></i>
       </a>
     </div>
   </section>
 
-  <!-- Rodapé -->
-  <footer class="footer">
+  <footer id="cadastro">
     <div class="container">
       <div class="row g-4">
         <div class="col-12 col-md-5">
-          <a href="#inicio" class="brand">
-            timber
-            <span>MÓVEIS & DECORAÇÃO</span>
-          </a>
-          <p>
-            Uma apresentação visual dedicada a móveis, ambientes e
-            inspirações de decoração para diferentes momentos da vida.
+          <div class="logo text-white">
+            CASA & OBRA
+            <span class="text-white-50">CONSTRUÇÃO • REFORMA • DECORAÇÃO</span>
+          </div>
+          <p class="mt-3">
+            Página demonstrativa de apresentação e inspiração
+            para projetos relacionados a ambientes residenciais.
           </p>
         </div>
 
-        <div class="col-6 col-md-3">
+        <div class="col-12 col-md-3">
           <h4>Navegação</h4>
           <p><a href="#inicio">Início</a></p>
           <p><a href="#categorias">Categorias</a></p>
-          <p><a href="#destaques">Ambientes</a></p>
-          <p><a href="#sobre">Sobre a proposta</a></p>
+          <p><a href="#inspiracao">Inspiração</a></p>
+          <p><a href="#sobre">Sobre a página</a></p>
         </div>
 
-        <div class="col-6 col-md-4">
-          <h4>Site oficial</h4>
-          <p>
-            Consulte o catálogo, informações de produtos, atendimento
-            e condições de compra diretamente no site oficial.
-          </p>
-          <a href="https://www.lojatimber.com.br/"
-             target="_blank" rel="noopener">
-            www.lojatimber.com.br
-            <i class="bi bi-box-arrow-up-right"></i>
-          </a>
+        <div class="col-12 col-md-4">
+          <h4>Dados cadastrais fornecidos</h4>
+          <p><strong class="text-white">Razão social:</strong><br>
+            Nidia dos Santos Dolfini</p>
+          <p><strong class="text-white">CNPJ:</strong><br>
+            26.434.281/0001-84</p>
+          <p><strong class="text-white">Inscrição Estadual SP:</strong><br>
+            254.181.501.110</p>
+          <p><strong class="text-white">Endereço informado:</strong><br>
+            Avenida Prisciliana de Castilho, 642<br>
+            Centro — Caraguatatuba/SP<br>
+            CEP 11660-330</p>
+          <p><strong class="text-white">Situação cadastral informada:</strong><br>
+            Ativa</p>
         </div>
       </div>
 
       <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
-        <span>© 2026 — Modelo demonstrativo de página.</span>
-        <span>Imagens ilustrativas. Consulte o site oficial para informações atualizadas.</span>
+        <span>© 2026 — Modelo demonstrativo independente.</span>
+        <span>Não representa uma filial nem uma parceria oficial com a Carajás.</span>
       </div>
     </div>
   </footer>
